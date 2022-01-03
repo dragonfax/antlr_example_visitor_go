@@ -5,7 +5,7 @@ GRAMMAR_FILES = JavaLexer.g4 JavaParser.g4
 GO_SOURCE_FILES = $(shell find ./ -type f -name '*.go')
 ANTLR_GO_RUNTIME=../antlr4/runtime/Go
 ANTLR_GO_FILES = $(shell find $(ANTLR_GO_RUNTIME) type f -name '*.go')
-BINARY=java_visitor
+BINARY=go_visitor
 GO=go1.18beta1
 
 run: $(BINARY)
